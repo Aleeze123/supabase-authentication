@@ -16,7 +16,7 @@ const ResetPassword = () => {
     setError("");
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: "http://localhost:5173/update-password", 
+      redirectTo: "https://supabase-authentication-alpha-dusky.vercel.app/update-password", 
     });
 
     if (error) {
